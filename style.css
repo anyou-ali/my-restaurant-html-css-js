@@ -1,0 +1,899 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+/* header */
+
+.container-header{
+    height: 600px;
+    position: relative;
+}
+
+.img-header{
+    position: absolute;
+    width: 610px;
+    height: 600px;
+    top: -120px;
+    right: 0;
+    z-index: -1;
+}
+
+/* navigation */
+
+.container-nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.nav,.nav__menu{
+    display: flex;
+}
+
+.nav{
+    height: 70px;
+    align-items: center;
+    padding-left: 30px;
+    top: 0;
+}
+
+.nav__logo{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav__menu{
+    list-style: none;
+}
+
+.nav__menu li{
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.nav__menu li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.burger-menu{
+    display: none;
+    border: 1px solid #000;
+    padding: 3px 8px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.burger-menu__line{
+    width: 25px;
+    height: 2px;
+    background: #000;
+    margin: 6px;
+    border-radius: 2px;
+}
+
+/* content header */
+
+.content-header{
+    width: 580px;
+    margin-left: 35px;
+    margin-top: 120px;
+}
+
+.content-header__title, .content-header__title-2{
+    font-size: 2.5rem;
+}
+
+.content-header__subtitle{
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.content-header__btn-menu{
+    margin-top: 20px;
+    width: 170px;
+    height: 60px;
+    background: #FE5F41;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.content-header__btn-menu:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Main */
+
+.main{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.main__services__title{
+    font-size: 2.5rem;
+}
+
+.main__services__subtitle{
+    font-size: 1.2rem;
+}
+
+/* Main food menu */
+
+.main__services__food-menu{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px;
+}
+
+.main__services__food-menu__healthy,.main__services__food-menu__fast-food
+,.main__services__food-menu__coffee{
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+    width: 340px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.main__services__food-menu__healthy,.main__services__food-menu__fast-food
+,.main__services__food-menu__coffee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.main__services__food-menu__healthy__content__img-healthy,.main__services__food-menu__fast-food__content__img-fast-food
+,.main__services__food-menu__coffee__content__img-coffee{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.main__services__food-menu__healthy__content__title,.main__services__food-menu__fast-food__content__title
+,.main__services__food-menu__coffee__content__title{
+    margin-top: 30px;
+}
+
+.main__services__food-menu__healthy__content__subtitle,.main__services__food-menu__fast-food__content__subtitle
+,.main__services__food-menu__coffee__content__subtitle{
+    width: 260px;
+    height: 140px;
+}
+
+.main__services__food-menu__healthy__content__text,.main__services__food-menu__fast-food__content__text
+,.main__services__food-menu__coffee__content__text{
+    margin-top: 40px;
+    color: rgb(155, 155, 155);
+}
+
+.main__services__food-menu__healthy:hover,.main__services__food-menu__fast-food:hover
+,.main__services__food-menu__coffee:hover{
+    border: none;
+    box-shadow: 0 18px 26px 0 rgba(0,0,0,0.2);
+}
+
+/* Main popular dishes */
+
+.main__popular-dishes{
+    margin-top: 150px;
+    padding-top: 70px;
+    padding-bottom: 180px;
+    height: 600px;
+    background: #FE5F41;
+}
+
+.main__popular-dishes__title{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.main__popular-dishes__subtitle{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.main__popular-dishes__content-dishes{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px;
+}
+
+.main__popular-dishes__content-dishes__dish-1,.main__popular-dishes__content-dishes__dish-2
+,.main__popular-dishes__content-dishes__dish-3{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+    width: 340px;
+    height: 470px;
+    border-radius: 10px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.main__popular-dishes__content-dishes__dish-1__content__img-dish-1,.main__popular-dishes__content-dishes__dish-2__content__img-dish-2
+,.main__popular-dishes__content-dishes__dish-3__content__img-dish-3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.main__popular-dishes__content-dishes__dish-1__content__title,.main__popular-dishes__content-dishes__dish-2__content__title
+,.main__popular-dishes__content-dishes__dish-3__content__title{
+    width: 250px;
+}
+
+.main__popular-dishes__content-dishes__dish-1__content__subtitle,.main__popular-dishes__content-dishes__dish-2__content__subtitle
+,.main__popular-dishes__content-dishes__dish-3__content__subtitle{
+    /* border: 1px solid red; */
+    width: 250px;
+    height: 140px;
+    color: rgb(155, 155, 155);
+}
+
+.main__popular-dishes__content-dishes__dish-1:hover,.main__popular-dishes__content-dishes__dish-2:hover
+,.main__popular-dishes__content-dishes__dish-3:hover{
+    box-shadow: 0 18px 26px 0 rgba(0,0,0,0.2);
+}
+
+/* Main tesimonials */
+
+.main__testimonials{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.main__testimonials__title{
+    font-size: 2.5rem;
+}
+
+.main__testimonials__subtitle{
+    font-size: 1.2rem;
+}
+
+.main__testimonials__content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px;
+}
+
+.main__testimonials__content__testimonial-1,.main__testimonials__content__testimonial-2
+,.main__testimonials__content__testimonial-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+    width: 340px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.main__testimonials__content__testimonial-1__content__img-1,.main__testimonials__content__testimonial-2__content__img-2
+,.main__testimonials__content__testimonial-3__content__img-3{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.main__testimonials__content__testimonial-1__content__subtitle,.main__testimonials__content__testimonial-2__content__subtitle
+,.main__testimonials__content__testimonial-3__content__subtitle{
+    width: 260px;
+    height: 140px;
+}
+
+.main__testimonials__content__testimonial-1__content__subtitle__text,.main__testimonials__content__testimonial-2__content__subtitle__text
+,.main__testimonials__content__testimonial-3__content__subtitle__text{
+    margin-top: 40px;
+    color: rgb(155, 155, 155);
+}
+
+.main__testimonials__content__testimonial-1:hover,.main__testimonials__content__testimonial-2:hover
+,.main__testimonials__content__testimonial-3:hover{
+    border: none;
+    box-shadow: 0 18px 26px 0 rgba(0,0,0,0.2);
+}
+
+.fa-star{
+    color: #FE5F41;
+}
+
+/* Gallery */
+
+.main__gallery{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main__gallery img{
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    background: #FFF7F3;
+    /* border: 1px solid red; */
+}
+
+.footer__col-1__logo{
+    margin-top: 16px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.footer__col-1__subtitle{
+    width: 230px;
+}
+
+.footer__col-1__subtitle__text{
+    margin-top: 50px;
+    color: rgb(129, 129, 129);
+}
+
+.footer__col-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__col-2 a{
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+    margin: 20px 0;
+}
+
+.footer__col-3__mail{
+    color: rgb(129, 129, 129);
+}
+
+.copyright{
+    margin-top: -20px;
+    height: 40px;
+    background: #FFF7F3;
+}
+
+.copyright__content{
+    text-align: center;
+}
+
+
+
+/* media queries media queries media queries */
+
+/* @media queries xs-sm for devices less than 768px */
+@media screen and (max-width: 768px){
+    /* navigation */
+    .container{
+        overflow-x: hidden;
+    }
+
+    .nav__logo{
+        font-size: 0.9rem;
+        margin-left: -10px;
+    }
+
+    .nav{
+        position: relative;
+        background: #FFF7F3;
+        height: 60px;
+    }
+    
+    .nav__menu{
+        position: absolute;
+        top: 24px;
+        right: 0px;
+        height: 100vh;
+        background: #FFF7F3;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        padding: 25px 0px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    .nav__menu li{
+        padding: 20px 0px;
+    }
+
+    .burger-menu{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        margin-right: 20px;
+    }
+
+    .img-header{
+        display: none;
+    }
+
+    /* content header */
+
+    .content-header{
+        width: 90vw;
+        margin-left: 30px;
+        padding-top: 20px;
+        /* border: 1px solid red; */
+    }
+
+    .content-header__title, .content-header__title-2{
+        font-size: 1.9rem;
+    }
+
+    .content-header__subtitle{
+        font-size: 1.0rem;
+        margin-top: 30px;
+    }
+
+    .content-header__btn-menu{
+        margin-top: 20px;
+        width: 140px;
+        height: 50px;
+        font-size: 0.9rem;
+    }
+
+    /* Main */
+
+    .main{
+        margin-top: -270px;
+    }
+    
+    .main__services__title{
+        font-size: 1.9rem;
+    }
+    
+    .main__services__subtitle{
+        font-size: 1.0rem;
+    }
+
+    /* Main food menu */
+
+    .main__services__food-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__services__food-menu__healthy,.main__services__food-menu__fast-food
+    ,.main__services__food-menu__coffee{
+        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+        width: 300px;
+        height: 330px;
+        border-radius: 10px;
+        margin: 12px 0px;
+        padding-top: 40px;
+    }
+
+    /* Main popular dishes */
+
+    .main__popular-dishes{
+        margin-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 180px;
+        height: 570px;
+        background: #FE5F41;
+    }
+
+    .main__popular-dishes__title{
+        font-size: 1.9rem;
+        color: #fff;
+    }
+
+    .main__popular-dishes__subtitle{
+        font-size: 1.0rem;
+        color: #fff;
+        margin: 0px 30px;
+    }
+
+    .main__popular-dishes__content-dishes{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__popular-dishes__content-dishes__dish-1{
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+        width: 300px;
+        height: 460px;
+        border-radius: 10px;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .main__popular-dishes__content-dishes__dish-2
+    ,.main__popular-dishes__content-dishes__dish-3{
+        display: none;
+    }
+
+    /* Main tesimonials */
+
+    .main__testimonials{
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .main__testimonials__title{
+        font-size: 1.9rem;
+        margin: 0px 30px;
+    }
+
+    .main__testimonials__subtitle{
+        font-size: 1.0rem;
+        margin: 25px 30px 0px 30px;
+    }
+
+    .main__testimonials__content{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    .main__testimonials__content__testimonial-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+        width: 300px;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    .main__testimonials__content__testimonial-2
+    ,.main__testimonials__content__testimonial-3{
+        display: none;
+    }
+
+    
+    /* Gallery */
+
+    .main__gallery{
+        width: 100%;
+        height: 220px;
+    }
+
+    .main__gallery img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .main__gallery-2,.main__gallery-3,.main__gallery-4{
+        display: none;
+    }
+
+    /* Footer */
+
+    footer{
+        background: #FFF7F3;
+    }
+
+    .footer{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 90px;
+    }
+
+    .footer__col-1,.footer__col-2,.footer__col-3{
+        margin-left: 10px;
+    }
+
+    .copyright{
+        margin-top: 120px;
+        padding-top: 10px;
+        height: 70px;
+    }
+
+}
+
+/* @media queries md for devices 769px */
+@media screen and (min-width: 769px){
+    /* navigation */
+    .nav{
+        background: #FFF7F3;
+    }
+    
+    .img-header{
+        width: 50vw;
+    }
+
+    /* content header */
+
+    .content-header{
+        width: 50vw;
+        margin-left: 30px;
+        padding-top: 20px;
+    }
+
+    .content-header__title, .content-header__title-2{
+        font-size: 1.9rem;
+    }
+
+    .content-header__subtitle{
+        font-size: 1.0rem;
+        margin-top: 30px;
+        width: 40vw;
+    }
+
+    .content-header__btn-menu{
+        margin-top: 20px;
+        width: 140px;
+        height: 50px;
+        font-size: 0.9rem;
+    }
+
+    /* Main */
+
+    .main{
+        margin-top: -150px;
+    }
+    
+    .main__services__title{
+        font-size: 1.9rem;
+    }
+    
+    .main__services__subtitle{
+        font-size: 1.0rem;
+    }
+
+    /* Main food menu */
+
+    .main__services__food-menu{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .main__services__food-menu__healthy,.main__services__food-menu__fast-food
+    ,.main__services__food-menu__coffee{
+        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+        width: 300px;
+        height: 330px;
+        border-radius: 10px;
+        margin: 12px 0px;
+        padding-top: 40px;
+    }
+
+    /* Main popular dishes */
+
+    .main__popular-dishes{
+        margin-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 180px;
+        height: 570px;
+    }
+
+    .main__popular-dishes__title{
+        font-size: 1.9rem;
+        color: #fff;
+    }
+
+    .main__popular-dishes__subtitle{
+        font-size: 1.0rem;
+        color: #fff;
+        margin: 0px 30px;
+    }
+
+    .main__popular-dishes__content-dishes{
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main__popular-dishes__content-dishes__dish-1,.main__popular-dishes__content-dishes__dish-2{
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+        width: 300px;
+        height: 460px;
+        border-radius: 10px;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .main__popular-dishes__content-dishes__dish-3{
+        display: none;
+    }
+
+    /* Main tesimonials */
+
+    .main__testimonials{
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .main__testimonials__title{
+        font-size: 1.9rem;
+        margin: 0px 30px;
+    }
+
+    .main__testimonials__subtitle{
+        font-size: 1.0rem;
+        margin: 25px 30px 0px 30px;
+    }
+
+    .main__testimonials__content{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    .main__testimonials__content__testimonial-1,.main__testimonials__content__testimonial-2
+    ,.main__testimonials__content__testimonial-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+        width: 300px;
+        height: 350px;
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+    /* Gallery */
+
+    .main__gallery{
+        width: 100%;
+        height: 220px;
+    }
+
+    .main__gallery img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+}
+
+/* @media queries lg for devices 992px */
+@media screen and (min-width: 992px){
+    /* Main popular dishes */
+
+    .main__popular-dishes{
+        margin-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 180px;
+        height: 570px;
+    }
+
+    .main__popular-dishes__title{
+        font-size: 1.9rem;
+        color: #fff;
+    }
+
+    .main__popular-dishes__subtitle{
+        font-size: 1.0rem;
+        color: #fff;
+        margin: 0px 30px;
+    }
+
+    .main__popular-dishes__content-dishes{
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main__popular-dishes__content-dishes__dish-1,.main__popular-dishes__content-dishes__dish-2
+    ,.main__popular-dishes__content-dishes__dish-3{
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+        width: 300px;
+        height: 460px;
+        border-radius: 10px;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+    } 
+}
+
+/* @media queries lg for devices 1220px */
+@media screen and (min-width: 1220px){
+    /* navigation */
+    .nav{
+        background: transparent;
+    }
+
+    /* content header */
+
+    .content-header__title, .content-header__title-2{
+        font-size: 2.5rem;
+    }
+
+    .content-header__subtitle{
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+
+    .content-header__btn-menu{
+        margin-top: 20px;
+        width: 170px;
+        height: 60px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .content-header__btn-menu:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /* Main */
+
+    .main__services__title{
+        font-size: 2.5rem;
+    }
+
+    .main__services__subtitle{
+        font-size: 1.2rem;
+    }
+
+    /* Main popular dishes */
+
+    .main__popular-dishes__title{
+        font-size: 2.5rem;
+        color: #fff;
+    }
+
+    .main__popular-dishes__subtitle{
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    /* Main tesimonials */
+
+    .main__testimonials__title{
+        font-size: 2.5rem;
+    }
+
+    .main__testimonials__subtitle{
+        font-size: 1.2rem;
+    }
+}
+
+/* class nav lors du click sur l'icône burger */
+.nav-show-menu{
+    transform: translateX(0%);
+}
+
+/* class nav pour le js */
+
+/* class nav lors du scroll */
+.scroll-nav{
+    background: #FFF7F3;
+    height: 70px;
+    box-shadow: 0 6px 15px rgba(25, 25, 25, 0.2);
+}
