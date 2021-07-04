@@ -4,7 +4,7 @@
 
 // utilisation de la méthode addEventListener sur la fenêtre actuelle avec l'évenement scroll en paramètre et une function anonyme
 window.addEventListener("scroll", function(){
-    //séléction du header avec la méthode querySelector
+    //séléction de la class container-nav avec la méthode querySelector
     let headerNav = document.querySelector(".container-nav");
     // condition
     if(window.pageYOffset > 0){
