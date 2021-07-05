@@ -27,7 +27,7 @@ burgerMenu.addEventListener("click", function(){
     nav.classList.toggle("nav-show-menu");
 })
 
-// function pour fermer la responsive nav
+// function fermeture de la responsive nav
 function closeNav(){
     let navUl = document.querySelector(".nav__menu");
     let navLinks = document.querySelectorAll(".nav__menu__list__link");

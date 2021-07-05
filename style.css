@@ -60,9 +60,30 @@ body{
     font-weight: bold;
 }
 
-.nav__menu li a{
+.nav__menu__list__link{
     text-decoration: none;
     color: #000;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__menu__list__link::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3.5px;
+    background: #FE5F41;
+    left: 0px;
+    bottom: -10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__menu__list__link:hover{
+    color: #FE5F41;
+}
+
+.nav__menu__list__link:hover::after{
+    width: 100%;
 }
 
 .burger-menu{
