@@ -6,7 +6,13 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #3d2723;
+}
+
+h1,h2,.nav__logo,.nav__menu,.footer__col-1__logo,.footer__col-2__title
+,.footer__col-3__title{
+    font-family: 'Mitr', sans-serif;
 }
 
 /* header */
@@ -18,7 +24,7 @@ body{
 
 .img-header{
     position: absolute;
-    width: 610px;
+    width: 48vw;
     height: 600px;
     top: -120px;
     right: 0;
@@ -65,6 +71,7 @@ body{
     color: #000;
     position: relative;
     transition: all 0.3s ease-in-out;
+    font-size: 0.9rem;
 }
 
 .nav__menu__list__link::after{
@@ -163,18 +170,14 @@ body{
 
 .main__services__food-menu__healthy,.main__services__food-menu__fast-food
 ,.main__services__food-menu__coffee{
-    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
-    width: 340px;
-    height: 400px;
-    border-radius: 10px;
-}
-
-.main__services__food-menu__healthy,.main__services__food-menu__fast-food
-,.main__services__food-menu__coffee{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease-in-out;
+    width: 340px;
+    height: 400px;
+    border: 1px solid #E6DAD8;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
 }
 
 .main__services__food-menu__healthy__content__img-healthy,.main__services__food-menu__fast-food__content__img-fast-food
@@ -182,6 +185,7 @@ body{
     width: 110px;
     height: 110px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .main__services__food-menu__healthy__content__title,.main__services__food-menu__fast-food__content__title
@@ -203,8 +207,8 @@ body{
 
 .main__services__food-menu__healthy:hover,.main__services__food-menu__fast-food:hover
 ,.main__services__food-menu__coffee:hover{
-    border: none;
-    box-shadow: 0 18px 26px 0 rgba(0,0,0,0.2);
+    border: transparent;
+    box-shadow: 0 20px 30px rgba(254,95,65,0.1);
 }
 
 /* Main popular dishes */
@@ -238,12 +242,10 @@ body{
 ,.main__popular-dishes__content-dishes__dish-3{
     display: flex;
     justify-content: center;
-    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
     width: 340px;
     height: 470px;
     border-radius: 10px;
     background: #fff;
-    transition: all 0.3s ease-in-out;
 }
 
 .main__popular-dishes__content-dishes__dish-1__content__img-dish-1,.main__popular-dishes__content-dishes__dish-2__content__img-dish-2
@@ -252,6 +254,7 @@ body{
     height: 200px;
     border-radius: 50%;
     margin-top: 40px;
+    object-fit: cover;
 }
 
 .main__popular-dishes__content-dishes__dish-1__content__title,.main__popular-dishes__content-dishes__dish-2__content__title
@@ -261,18 +264,12 @@ body{
 
 .main__popular-dishes__content-dishes__dish-1__content__subtitle,.main__popular-dishes__content-dishes__dish-2__content__subtitle
 ,.main__popular-dishes__content-dishes__dish-3__content__subtitle{
-    /* border: 1px solid red; */
     width: 250px;
     height: 140px;
     color: rgb(155, 155, 155);
 }
 
-.main__popular-dishes__content-dishes__dish-1:hover,.main__popular-dishes__content-dishes__dish-2:hover
-,.main__popular-dishes__content-dishes__dish-3:hover{
-    box-shadow: 0 18px 26px 0 rgba(0,0,0,0.2);
-}
-
-/* Main tesimonials */
+/* Main testimonials */
 
 .main__testimonials{
     padding-top: 80px;
@@ -299,8 +296,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
+    border: 1px solid #E6DAD8;
+    transition: all 0.4s ease-in-out;
     width: 340px;
     height: 400px;
     border-radius: 10px;
@@ -311,6 +308,7 @@ body{
     width: 90px;
     height: 90px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .main__testimonials__content__testimonial-1__content__subtitle,.main__testimonials__content__testimonial-2__content__subtitle
@@ -327,8 +325,8 @@ body{
 
 .main__testimonials__content__testimonial-1:hover,.main__testimonials__content__testimonial-2:hover
 ,.main__testimonials__content__testimonial-3:hover{
-    border: none;
-    box-shadow: 0 18px 26px 0 rgba(0,0,0,0.2);
+    border: transparent;
+    box-shadow: 0 20px 30px rgba(254,95,65,0.1);
 }
 
 .fa-star{
@@ -457,7 +455,7 @@ body{
     /* content header */
 
     .content-header{
-        width: 90vw;
+        width: 80vw;
         margin-left: 30px;
         padding-top: 20px;
         /* border: 1px solid red; */
@@ -484,6 +482,10 @@ body{
     .main{
         margin-top: -270px;
     }
+
+    .main__services{
+        margin: 0px 30px;
+    }
     
     .main__services__title{
         font-size: 1.9rem;
@@ -503,7 +505,6 @@ body{
 
     .main__services__food-menu__healthy,.main__services__food-menu__fast-food
     ,.main__services__food-menu__coffee{
-        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
         width: 300px;
         height: 330px;
         border-radius: 10px;
@@ -542,7 +543,6 @@ body{
     .main__popular-dishes__content-dishes__dish-1{
         display: flex;
         justify-content: center;
-        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
         width: 300px;
         height: 460px;
         border-radius: 10px;
@@ -585,7 +585,6 @@ body{
         justify-content: center;
         align-items: center;
         transition: all 0.3s ease-in-out;
-        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
         width: 300px;
         height: 350px;
         border-radius: 10px;
@@ -648,13 +647,13 @@ body{
     }
     
     .img-header{
-        width: 50vw;
+        width: 48vw;
     }
 
     /* content header */
 
     .content-header{
-        width: 50vw;
+        width: 47vw;
         margin-left: 30px;
         padding-top: 20px;
     }
@@ -700,7 +699,6 @@ body{
 
     .main__services__food-menu__healthy,.main__services__food-menu__fast-food
     ,.main__services__food-menu__coffee{
-        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
         width: 300px;
         height: 330px;
         border-radius: 10px;
@@ -737,7 +735,6 @@ body{
     .main__popular-dishes__content-dishes__dish-1,.main__popular-dishes__content-dishes__dish-2{
         display: flex;
         justify-content: center;
-        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
         width: 300px;
         height: 460px;
         border-radius: 10px;
@@ -780,7 +777,6 @@ body{
         justify-content: center;
         align-items: center;
         transition: all 0.3s ease-in-out;
-        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
         width: 300px;
         height: 350px;
         border-radius: 10px;
@@ -803,6 +799,15 @@ body{
 
 /* @media queries lg for devices 992px */
 @media screen and (min-width: 992px){
+    /* navigation */
+    /* .nav{
+        background: transparent;
+    } */
+
+    .img-header{
+        width: 48vw;
+    }
+
     /* Main popular dishes */
 
     .main__popular-dishes{
@@ -833,7 +838,6 @@ body{
     ,.main__popular-dishes__content-dishes__dish-3{
         display: flex;
         justify-content: space-around;
-        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2);
         width: 300px;
         height: 460px;
         border-radius: 10px;
@@ -842,8 +846,8 @@ body{
     } 
 }
 
-/* @media queries lg for devices 1220px */
-@media screen and (min-width: 1220px){
+/* @media queries lg for devices 1200px */
+@media screen and (min-width: 1200px){
     /* navigation */
     .nav{
         background: transparent;
@@ -864,12 +868,7 @@ body{
         margin-top: 20px;
         width: 170px;
         height: 60px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: all 0.3s ease-in-out;
-    }
-    
-    .content-header__btn-menu:hover{
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 
     /* Main */
