@@ -13,6 +13,7 @@ body{
 h1,h2,.nav__logo,.nav__menu,.footer__col-1__logo,.footer__col-2__title
 ,.footer__col-3__title{
     font-family: 'Mitr', sans-serif;
+    color: #4D312C;
 }
 
 /* header */
@@ -68,7 +69,7 @@ h1,h2,.nav__logo,.nav__menu,.footer__col-1__logo,.footer__col-2__title
 
 .nav__menu__list__link{
     text-decoration: none;
-    color: #000;
+    color: #4D312C;
     position: relative;
     transition: all 0.3s ease-in-out;
     font-size: 0.9rem;
